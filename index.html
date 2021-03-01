@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+
+
+<body>  
+    <!-- Boostrap navbar-->
+    <!-- Bootstrap navbar has a wrapping with class navbar-expand, in order to have responsive collapsing.  Fixed-top 
+    means that the navbar is always fixed at the top even when scrolling.  The class 'navbar-brand' is for the name of the website,
+    and it is linked to this page, so when you click on it it redirects here.  The 'navbar-toggler' is a button that allows for 
+    for the navbar to drop down after resizing the browser window.  The collapse navbar-collapse class groups together the contents
+    of the navbar and hides them, so it collapses down after a certain breakpoint on the screen. The navbar-nav class is for the navigation, 
+    and includes its contents, which include links to each of the subpages. ml-auto positions the navbar on the the lefthand side of the screen. -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Sunrise</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="subpage1.html">Amenities</a>
+            <a class="nav-link" href="subpage2.html">History</a>
+            <a class="nav-link" href="subpage3.html">Subscribe</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  
+    <!--Carousel-->
+    <!-- The carousel slideshow uses CSS 3D transforms and Javascript to work with images and text, buttons to 
+    scroll right and left, and to implement indicators of which slide you are on.  The class carousel slide creates 
+    slides for the contents of the carousel.  Data attributes help to control the position of the carousel.  Attributes,
+    such as data-bs-ride="carousel" initializes the carousel as animating starting when the page loads.  The class
+    carousel-indicators add indicators to the carousel.  Since it is an indicator element, it needs a data-bs-target 
+    attribute so it matches the id of the carousel element.  The data-bs-slide-to indicates which of the slide it is sliding to.
+    Carousel-control-prev and carousel-control-next are for buttons for the carousel to scroll to the left slide or right slide.  
+    The class carousel-inner contains the slides for the carousel.  Each carousel item has a data-bs-interval, which is the amount of 
+    time delay between automatically cycling to another item.  Since it is set it to true by because it has a value, the carousel will 
+    have autoscroll.  Carousel captions add text to the carousel.  
+  -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <!--Carousel indicators-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!--Left and right buttons for carousel-->
+        <div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+
+        <!--Carousel image 1 -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" data-bs-interval="2000" class="d-block w-100" style="background-image: url('images/image1.jpg')" alt="img-1">
+            <div class="carousel-caption text-center" id="carousel-caption-1">
+              <h1>Welcome to Sunrise Villa</h1>
+              <h3>Bed and Breakfast</h3>
+            </div>
+            <div class="carousel-caption text-bottom" id="carousel-caption-2">
+              <h4>img src: https://unsplash.com/photos/TAm2z1TOges</h4>
+            </div>
+          </div>
+        
+        <!--Carousel image 2 -->
+          <div class="carousel-item" data-bs-interval="2000" style="background-image: url('images/cliffs.jpg')" class="d-block w-100" alt="img-2">
+            <div class="carousel-caption text-bottom">
+              <h4>img src: https://unsplash.com/photos/WhRsHmFtFXQ</h4>
+            </div>
+          </div>
+        
+        <!--Carousel image 3 -->
+          <div class="carousel-item" data-bs-interval="2000" style="background-image: url('images/sunset.jpg')" class="d-block w-100" alt="img-3">
+            <div class="carousel-caption text-bottom">
+              <h4>img src: https://unsplash.com/photos/c6miNI_WdZ4</h4>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+    
+</body>
+
+
+</html>
+
+
