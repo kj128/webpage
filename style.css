@@ -27,7 +27,8 @@ body {
     font-family: poppins; 
 }
 
-
+/* Bacgkround size property using CSS resource: https://css-tricks.com/perfect-full-page-background-image/
+Set background and adjust size using bakcground-size set to cover keyword*/
 .carousel-item {
     height: 100vh; 
     min-height: 500px; 
@@ -79,10 +80,12 @@ body {
 
 }
 
+/*  Resources for text shadow: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow 
+    Font size: https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97#:~:text=rem%20values%20are%20relative%20to,the%20browser%20(usually%2016px).*/  
 
 .carousel-caption h1 {
-    font-size: 3.8rem;
-    font-weight: 700; 
+    font-size: 3.9rem;
+    font-weight: 690; 
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem .8rem black; 
     padding-bottom: .1rem; 
@@ -243,12 +246,6 @@ body {
     margin-top: 300px;
 }
 
-
-#form-background {
-    /*background-image: url(images/form_image.jpg);*/
-    background-image: url(images/forest.jpg);
-    background-image: 100%;
-}
 
 #footer {
     background-color: black;
